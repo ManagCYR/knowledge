@@ -6122,3 +6122,25 @@ dialog :link{
     display:none;
   }
 }
+/* 🔒 Oculta herramientas de edición y menú lateral derecho */
+#editorModeButtons,
+#editorModeSeparator,
+#secondaryToolbarToggle,
+#secondaryToolbar,
+#viewBookmark,
+#downloadButton,
+#printButton,
+#documentProperties,
+#editorStamp,
+#editorInk,
+#editorFreeText,
+#editorHighlight,
+#editorSignature {
+  display: none !important;
+}
+
+/* 🔒 También oculta sus contenedores si es necesario */
+.verticalToolbarSeparator,
+.toolbarButtonWithContainer:has(#secondaryToolbarToggleButton) {
+  display: none !important;
+}
